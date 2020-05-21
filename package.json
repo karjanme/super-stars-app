@@ -17,6 +17,7 @@
     "lint": "ng lint",
     "build": "ng build",
     "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "e2e": "ng e2e",
     "start": "ng serve --open"
   },
