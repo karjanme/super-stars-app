@@ -18,7 +18,7 @@
     "build": "ng build",
     "test": "ng test",
     "e2e": "ng e2e",
-    "start": "ng serve --open"
+    "start": "ng serve"
   },
   "dependencies": {
     "@angular/animations": "~9.1.7",
