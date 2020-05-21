@@ -1,0 +1,37 @@
+name: Main Workflow
+
+on: [push, pull_request]
+
+jobs:
+  main:
+    name: Main Job
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install
+      run: npm ci
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Build
+      run: npm run build
+
+    - name: Test (unit)
+      run: npm run test
+
+    - name: Test (e2e)
+      run: npm run e2e
