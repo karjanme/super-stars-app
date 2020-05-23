@@ -23,7 +23,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'super-stars-app'`, () => {
+  it('should have a title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('super-stars-app');
@@ -33,6 +33,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.mat-card').textContent).toContain('Hello World!');
+    expect(compiled.querySelector('.mat-card-title').textContent).toContain('Hello World!');
   });
 });

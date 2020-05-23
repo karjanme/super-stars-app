@@ -1,3 +1,13 @@
 <mat-card>
-  Hello World!
+  <mat-card-title>
+    Hello World!
+  </mat-card-title>
+  <mat-card-content>
+    <div *ngFor="let def of definitionStars">
+      <app-star
+        color='{{def.color}}'
+        text='{{def.category}}'
+      ></app-star>
+    </div>
+  </mat-card-content>
 </mat-card>

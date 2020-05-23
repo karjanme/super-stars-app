@@ -13,7 +13,7 @@ describe('super-stars-app', () => {
 
   it('should display message', async () => {
     page.navigateTo();
-    const cardText = await page.getCardText();
+    const cardText = await page.getCardTitle();
     expect(cardText).toEqual('Hello World!');
   });
 
