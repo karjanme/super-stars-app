@@ -9,7 +9,7 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<unknown>;
   }
 
-  getCardText(): Promise<string> {
-    return element(by.css('app-root .mat-card')).getText() as Promise<string>;
+  getCardTitle(): Promise<string> {
+    return element(by.css('app-root .mat-card-title')).getText() as Promise<string>;
   }
 }
