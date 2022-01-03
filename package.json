@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jnsnkrllive/super-stars-app"
+    "url": "https://github.com/karjanme/super-stars-app"
   },
   "scripts": {
     "ng": "ng",
